@@ -1518,8 +1518,8 @@
         return cbf(null, info);
       } else {
         if (typeof module !== 'undefined' && module.exports) {
-          var https = require('https');
-          https.get("https://ccdcapi.alipay.com/validateAndCacheCardInfo.json?_input_charset=utf-8&cardNo=" + cardNo + "&cardBinCheck=true", function(res) {
+          var axios = require('axios');
+          axios.get("https://ccdcapi.alipay.com/validateAndCacheCardInfo.json?_input_charset=utf-8&cardNo=" + cardNo + "&cardBinCheck=true", function(res) {
             if (res.statusCode == 200) {
               var chunk = "";
               res.on('data', function(d) {
