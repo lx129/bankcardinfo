@@ -29,7 +29,8 @@
     "coveralls": "2.11.9"
   },
   "dependencies": {
-    "bluebird": "^3.4.1"
+    "bluebird": "^3.4.1",
+    "axios": "^0.18.0"
   },
   "author": {
     "name": "navyxie"
